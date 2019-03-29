@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Ark Dandelion</title>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-grey-light py-8 font-sans min-h-screen leading-normal">
+    <div class="max-w-sm mx-auto rounded shadow overflow-hidden">
+      <link href="css/options.css" rel="stylesheet">
+      <div class="bg-white px-8 py-4">
+        <h3 class="text-xl font-semibold text-grey-black">Ark Dandelion</h3>
+      </div>
+      <div class="p-8 bg-grey-lightest">
+        <div class="flex items-start mb-8">
+          <div>
+            <h4 class="font-semibold text-black leading-tight mb-1">Peer</h4><input class="shadow appearance-none border rounded w-full py-1 px-2 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="user__server--value" placeholder="https://explorer.ark.io:8443/" type="text">
+            <p></p>
+          </div>
+        </div>
+        <div class="flex items-start mb-8">
+          <div>
+            <h4 class="font-semibold text-black leading-tight mb-1">Token</h4>
+            <p class="text-grey-dark leading-normal text-sm"></p>
+            <h4 id="nodeToken">No connection.</h4>
+            <p></p>
+          </div>
+        </div>
+        <div class="flex items-start mb-8">
+          <div>
+            <h4 class="font-semibold text-black leading-tight mb-1">Symbol</h4>
+            <p class="text-grey-dark leading-normal text-sm"></p>
+            <h4 id="nodeSymbol">No connection.</h4>
+            <p></p>
+          </div>
+        </div>
+        <div class="flex items-start mb-8">
+          <div>
+            <h4 class="font-semibold text-black leading-tight mb-1">Explorer</h4>
+            <p class="text-grey-dark leading-normal text-sm"></p>
+            <h4 id="nodeExplorer">No connection.</h4>
+            <p></p>
+          </div>
+        </div>
+        <div class="flex items-start mb-8"></div>
+        <div class="flex mb-4">
+          <div class="w-1/5 h-12">
+            <button class="button__submit bg-transparent hover:bg-blue text-blue-dark font-semibold hover:text-white py-2 px-4 border border-blue hover:border-transparent rounded" id="button__submit">Save</button>
+          </div>
+          <div class="w-1/5 h-12"></div>
+          <div class="w-1/5 h-12">
+            <button class="button__close bg-transparent hover:bg-blue text-blue-dark font-semibold hover:text-white py-2 px-4 border border-blue hover:border-transparent rounded" id="button__close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/options.js">
+  </script>
+</body>
+</html>

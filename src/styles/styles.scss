@@ -1,0 +1,82 @@
+@import "fonts";
+@import "reset";
+@import "variables";
+@tailwind preflight;
+@tailwind utilities;
+@tailwind components;
+
+#home {
+    min-width: 400px;
+    max-width: 450px;
+    .container {
+        padding: 10px;
+        .navbar {
+            .navbar__main {
+                margin: 0;
+                padding-left: 0;
+                li {
+                    display: inline-block;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .logo__content--holder {
+                    .main__logo {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+                .options__content-holder {
+                    float: right;
+                    padding: 0 3px;
+                    .settings__logo {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
+        .content__holder {
+            .commands__content--holder {
+                display: flex;
+                align-items: center;
+                padding: 0;
+                justify-content: center;
+                .button__content--holder {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 20px;
+                    height: 18px;
+                    margin: 0 0px;
+                    border-radius: 100%;
+                    box-shadow: $color-shadow-light 0px 2px 4px;
+                    #button__info, #button__messages, #button__createtx {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+            .menu_bar {
+            margin: 8px 0 1px 0;
+            }
+        }
+    }
+}
+
+#tx {
+    .tx-content {
+        background-color: #fefefe;
+        margin: auto;
+        width: 25%;
+    }   
+    .displaytoggle {
+        display: none;
+        position: fixed;
+        padding-top: 150px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Ark Dandelion</title>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <section id="home">
+    <div class="container py-8 font-sans leading-normal bg-white">
+      <nav class="navbar">
+        <ul class="navbar__main">
+          <li class="logo__content--holder"><img class="main__logo selectDisable" src="assets/logo.png"></li>
+          <li class="options__content-holder" id="options__content-holder" title="Options">
+            <a href="options.html" rel="noopener" target="_blank"><img class="settings__logo" src="assets/server.png"></a>
+          </li>
+        </ul>
+        <div class="uppercase text-grey text-xs text-wide tracking-wide d-none"></div>
+      </nav>
+      <div class="content__holder bg-blue-lightest border-t border-b border-blue text-blue-dark px-4 py-3" role="alert">
+        <div align="center" class="font-semibold mb-3" id="status">
+          <p>Warning</p>
+          <p>You are not connected to a peer.</p>
+        </div>
+        <div class="content__holder border-blue text-blue-dark" role="alert">
+          <div class="webowner__info--holder text-center text-red text-xs text-wide tracking-wide d-none">
+            <div class="pb-3" id="webowner">
+              The domain owner has not set a tipping address.
+            </div>
+            <div id="tipcontainer"></div>
+          </div>
+        </div><!--style="word-wrap: break-word; width: 380px"-->
+        <div class="vendorfield__info--holder text-indigo break-normal text-xs font-normal text-wide tracking-wide d-none">
+          <div id="tx4" class="flex  mb-2 pb-2 border-b border-grey"></div><div id="tx3" class="flex  mb-2 pb-2 border-b border-grey"></div><div id="tx2" class="flex  mb-2 pb-2 border-b border-grey"></div><div id="tx1" class="flex  mb-2 pb-2 border-b border-grey"></div><div id="tx0" class="flex  mb-2 pb-2 border-b border-grey"></div>
+          <div align="center">
+            <input class="shadow appearance-none border leading-tight focus:outline-none max-w-s py-1 px-1 rounded mb-4 mt-2" id="vendorfield--value"><button class=" bg-white hover:bg-grey-lightest text-grey-darkest font-semibold border border-grey-light rounded shadow py-1 px-1" id="qrcode--holder">Post</button>
+          </div>
+        </div>
+        <p class="text-center d-none" id="menu_bar"></p>
+        <ul class="commands__content--holder d-none">
+          <li class="button__content--holder" id="button__messages--holder" title="Messages"><img alt="MSG" id="button__messages" src="assets/messages.png"></li>
+          <li class="button__content--holder" id="button__createtx--holder" title="Create Transaction"><img alt="TX" id="button__createtx" src="assets/craft.png"></li>
+          <li class="button__content--holder" id="webowner__content--holder" title="Webowner Inforation"><img alt="INFO" id="button__info" src="assets/info.png"></li>
+        </ul>
+        <div align="center" class="pt-4">
+          <div id="container"></div>
+        </div>
+      </div>
+    </section>
+    <script src="scripts/popup.js">
+  </script>
+</body>
+</html>

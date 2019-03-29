@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <section id="tx">
+    <div class="content__holder">
+      <div class="bg-grey-light py-8 font-sans min-h-screen leading-normal">
+        <div class="max-w-sm mx-auto rounded shadow overflow-hidden">
+          <link href="css/styles.css" rel="stylesheet">
+          <div class="bg-white px-8 py-4">
+            <h3 class="text-xl font-semibold text-grey-black">Ark Dandelion</h3>
+            <h3 class="text-grey-dark text-sm font-medium font-sans leading-normal" id="show_network">Network</h3>
+            <div class="inline-block relative w-64">
+              <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker"></div>
+            </div>
+          </div>
+          <div class="p-4 bg-grey-lightest">
+            <div class="flex items-start mb-8">
+              <div>
+                <h4 class="font-semibold text-black leading-tight mb-1">Recipient</h4>
+                <p class="text-grey-dark leading-normal text-sm"></p>
+                <div class="inline-block relative w-64">
+                  <input class="shadow appearance-none border rounded w-full px-4 py-2 pr-8 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="recipient--value" placeholder="AVUL7M7Fu3JSHpnJYNUhpTFNcnLUJDYNT9" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start mb-8">
+              <div>
+                <h4 class="font-semibold text-black leading-tight mb-1">Amount</h4>
+                <p class="text-grey-dark leading-normal text-sm"></p>
+                <div class="inline-block relative w-64">
+                  <input class="shadow appearance-none border rounded w-full px-4 py-2 pr-8 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="amount--value" placeholder="1.337" type="text">
+                </div>
+              </div>
+              <p></p>
+            </div>
+            <div class="flex items-start mb-8">
+              <div>
+                <h4 class="font-semibold text-black leading-tight mb-1">Smartbridge/vendorField</h4>
+                <p class="text-grey-dark leading-normal text-sm"></p>
+                <div class="inline-block relative w-64">
+                  <input class="shadow appearance-none border rounded w-full px-4 py-2 pr-8 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="vendorfield--value" placeholder="A message from Ark Dandelion" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start mb-8"></div>
+            <div class="flex mb-4">
+              <div class="w-1/4 h-12">
+                <div class="w-1/4 h-12">
+                  <button class="button__confirm bg-transparent hover:bg-blue text-blue-dark font-semibold hover:text-white py-2 px-4 border border-blue hover:border-transparent rounded" id="button__confirm">Submit</button>
+                </div>
+                <div class="w-1/4 h-12"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="displaytoggle" id="displayTx">
+          <div class="tx-content shadow rounded to border-solid border-t-2 border-blue-light bg-grey-light p-6 my-2">
+            <div align="center" id="container"></div>
+          </div>
+        </div>
+    <script src="scripts/createtx.js">
+    </script> 
+  </section>
+</body>
+</html>
