@@ -48,6 +48,7 @@ browser.storage.local.get(['server', 'bip39', 'network'])
         for (let i = 4; i > -1; i--) {
           document.getElementById('tx'+i).innerText += 
           response.data.data[i].vendorField;
+          display('.tx'+i);
         }
       });
 
