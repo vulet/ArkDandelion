@@ -12,15 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const vendorField = document.getElementById('vendorfield--value').value;
     const amount = document.getElementById('amount--value').value;
     const byteCheck = Buffer.byteLength(vendorField);
-    if ( byteCheck > 64) {
-      document.getElementById('container').innerHTML =
-       'This is '+byteCheck+' bytes, messages over 64'+
-       ' are not supported at this time.';
+    if (byteCheck > 64) {
+      document.getElementById('container').innerHTML = `This is ${byteCheck} bytes, messages over 64`
+       + ' are not supported at this time.';
       return;
     }
-    QRCode.toCanvas('ark:'+recipient+'?amount='+amount+'&vendorField='+
-                vendorField,
-    {errorCorrectionLevel: 'H'}, function(err, canvas) {
+    QRCode.toCanvas(`ark:${recipient}?amount=${amount}&vendorField=${
+      vendorField}`,
+    { errorCorrectionLevel: 'H' }, (err, canvas) => {
       document.getElementById('container').innerHTML = null;
       document.getElementById('container').appendChild(canvas);
     });
@@ -31,16 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
     qrBuilder();
   });
 
-  //display QR
+  // display QR
   const displayTx = document.getElementById('displayTx');
   const confirm = document.getElementById('button__confirm');
-  
-  confirm.onclick = function() {
+
+  confirm.onclick = function () {
     displayTx.style.display = 'block';
   };
 
-  window.onclick = function(event) {
-    if (event.target == displayTx) {
+  window.onclick = function (event) {
+    if (event.target === displayTx) {
       displayTx.style.display = 'none';
     }
   };
